@@ -119,3 +119,75 @@ footer{
 .marcasCV_validador{
   margin-left: 3%;
 }
+@media (max-width: 1264px) {
+  :root{
+  --fondoCelular: #e2e0df;
+  --fondoDerecha: rgb(220, 222, 225);
+  --fondoIzquierda: rgb(49, 91, 129);
+  --colorNombre: rgb(222, 219, 220);
+  --colorLetra: #212222;
+}
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.descripcionCV, .marcasCV, .inicioCv_Perfil_Habilidades, .inicioCv_Perfil>h2, img, .inicioCV_Carrera{
+  display: none;
+}
+body{
+  display: flex;
+  background-color: var(--fondoCelular);  
+  justify-content: center;
+  align-items: center;
+  width: 100vw; /* 100% del ancho de la ventana */
+  height: 100vh;
+}
+.inicioCV{
+  display: flex;
+  padding: 0%;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 70vw; /* 100% del ancho de la ventana */
+  height: 70vh;
+
+}
+.inicioCV_Nombre{
+  border: 5px;
+  border-style:solid;
+  border-color: red;
+  flex: 1;
+  background-color: var(--fondoIzquierda);
+  color: var(--colorNombre);
+  margin: 0%;
+}
+.inicioCV_Nombre>h1{
+  margin: 0%;
+  margin-top: 50%;
+  text-align: center;
+}
+.inicioCV_Nombre::after{
+  content: "Desarollador web";
+  margin: 0%;
+  font-size: 160%;
+  margin-left: 20%;
+  color: darksalmon;
+}
+.inicioCv_Perfil{
+  border: 5px;
+  border-style:solid;
+  border-color: blueviolet;
+  flex:  2;
+  background-color: var(--fondoDerecha);
+  padding: 0%;
+}
+.inicioCv_Perfil__Email>a, .inicioCv_Perfil__Telefono>a, .inicioCv_Perfil__Dirrecion>a{
+  color: var(--colorLetra);
+  text-decoration: none;
+  margin-bottom: 30%;
+
+}
+.inicioCv_Perfil__Email, .inicioCv_Perfil__Telefono, .inicioCv_Perfil__Dirrecion{
+  text-align: center;
+  margin-top: 5%;
+}
+}
